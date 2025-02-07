@@ -3,15 +3,9 @@ import { Inter } from "next/font/google"
 import "./globals.css"
 import type React from "react"
 import { Facebook, Youtube, Instagram, Linkedin } from "lucide-react"
+import { Header } from "./components/Header"
 
 const inter = Inter({ subsets: ["latin"] })
-
-// export const metadata: Metadata = {
-//   title: "Learn English with Ivanina",
-//   description:
-//     "Professional English language tutor specializing in Business English, Exam Preparation, and Conversational English.",
-// }
-
 
 export const metadata: Metadata = {
   title: "Learn English with Ivanina",
@@ -21,21 +15,11 @@ export const metadata: Metadata = {
   
 }
 
-
-
 export const viewport = {
   width: "device-width",
   initialScale: 1,
   themeColor: "#10b981"
 };
-
-
-
-
-
-
-
-
 
 export default function RootLayout({
   children,
@@ -50,45 +34,6 @@ export default function RootLayout({
         <Footer />
       </body>
     </html>
-  )
-}
-
-function Header() {
-  return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-white bg-opacity-90 shadow-sm">
-      <nav className="container mx-auto px-4 py-4 flex justify-between items-center">
-        <a href="#" className="text-2xl font-bold text-emerald-600">
-          Learn English with Ivanina
-        </a>
-        <ul className="flex space-x-6">
-          <li>
-            <a href="#home" className="hover:text-emerald-600 transition-colors">
-              Home
-            </a>
-          </li>
-          <li>
-            <a href="#about" className="hover:text-emerald-600 transition-colors">
-              About
-            </a>
-          </li>
-          <li>
-            <a href="#courses" className="hover:text-emerald-600 transition-colors">
-              Courses
-            </a>
-          </li>
-          <li>
-            <a href="#testimonials" className="hover:text-emerald-600 transition-colors">
-              Testimonials
-            </a>
-          </li>
-          <li>
-            <a href="#contact" className="hover:text-emerald-600 transition-colors">
-              Contact
-            </a>
-          </li>
-        </ul>
-      </nav>
-    </header>
   )
 }
 
