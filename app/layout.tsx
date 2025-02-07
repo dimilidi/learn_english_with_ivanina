@@ -6,11 +6,36 @@ import { Facebook, Youtube, Instagram, Linkedin } from "lucide-react"
 
 const inter = Inter({ subsets: ["latin"] })
 
+// export const metadata: Metadata = {
+//   title: "Learn English with Ivanina",
+//   description:
+//     "Professional English language tutor specializing in Business English, Exam Preparation, and Conversational English.",
+// }
+
+
 export const metadata: Metadata = {
   title: "Learn English with Ivanina",
   description:
     "Professional English language tutor specializing in Business English, Exam Preparation, and Conversational English.",
+  manifest: "/manifest.json"
+  
 }
+
+
+
+export const viewport = {
+  width: "device-width",
+  initialScale: 1,
+  themeColor: "#10b981"
+};
+
+
+
+
+
+
+
+
 
 export default function RootLayout({
   children,
