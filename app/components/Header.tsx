@@ -22,7 +22,7 @@ export function Header() {
     <header className="fixed top-0 left-0 right-0 z-50 bg-white bg-opacity-90 shadow-sm">
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center py-4">
-          <a href="#" className="text-2xl font-bold text-emerald-600">
+          <a href="#" className="text-xl font-bold text-emerald-600">
             Learn English with Ivanina
           </a>
 
